@@ -73,7 +73,11 @@ window.addEventListener("load", function () {
     } else {
       durationAudio.textContent = CalTime(duration);
     }
-    remaning.textContent = CalTime(remanTime);
+    if (!remanTime) {
+      remaning.textContent = "0:00";
+    } else {
+      remaning.textContent = CalTime(remanTime);
+    }
   }
   function CalTime(time) {
     const minute = Math.floor(time / 60);
