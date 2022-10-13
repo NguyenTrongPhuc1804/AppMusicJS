@@ -12,6 +12,10 @@
   border-radius: 15px;
 }
 .music {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin: 5% auto;
   width: 250px;
   padding: 20px;
@@ -20,10 +24,10 @@
   background: white;
   margin-bottom: 0;
 }
-.music img {
+.music .img-mp3 {
   margin: 0 auto;
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  height: 80%;
   border-radius: 50%;
 }
 .music img.isplaying {
@@ -52,6 +56,8 @@
   border-radius: 50%;
 }
 .time {
+  margin-top: 20px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
