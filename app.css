@@ -1,0 +1,75 @@
+.box-music {
+  margin: 20px auto;
+  height: auto;
+  max-width: 350px;
+  padding: 20px 0;
+  background: #664aff;
+  border-radius: 15px;
+}
+.music {
+  margin: 5% auto;
+  width: 250px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background: white;
+  margin-bottom: 0;
+}
+.music img {
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+}
+.music img.isplaying {
+  animation: rotate 10s forwards infinite linear;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.music input {
+  margin-top: 50px;
+  width: 100%;
+  height: 3px;
+  -webkit-appearance: none;
+  background: #ddd;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.music input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #664aff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.change-song {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 200px;
+  margin: 5% auto;
+}
+.change-song i {
+  cursor: pointer;
+  color: white;
+}
+.change-song .play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  font-size: 27px;
+  border: 7px solid #ccc;
+  border-radius: 50%;
+}

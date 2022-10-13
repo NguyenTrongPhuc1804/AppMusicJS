@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="box-music">
+      <div class="music">
+        <img
+          class="img-mp3"
+          src="https://i.scdn.co/image/ab67616d0000b273a400211178f6d590d875f2da"
+          alt=""
+        />
+        <audio id="song" src="./song/song2.mp3"></audio>
+        <input
+          type="range"
+          id="vol"
+          name="vol"
+          min="0"
+          max=""
+          value="0"
+          class="bar"
+        />
+        <div class="time">
+          <div class="duration">0:00</div>
+          <div class="remaning">0:00</div>
+        </div>
+      </div>
+      <div class="change-song">
+        <i class="fa-solid fa-backward back"></i>
+        <i class="fa-solid play fa-play"></i>
+        <i class="fa-solid fa-forward next"></i>
+      </div>
+    </div>
+  </body>
+</html>
