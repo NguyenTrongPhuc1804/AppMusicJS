@@ -20,13 +20,13 @@ window.addEventListener("load", function () {
     if (playing) {
       audio.play();
       playing = false;
-      img.classList.toggle("isplaying");
+      img.classList.add("isplaying");
       playBtn.classList.add("fa-pause");
       playBtn.classList.remove("fa-play");
     } else {
       audio.pause();
       playing = true;
-      img.classList.toggle("isplaying");
+      img.classList.remove("isplaying");
       playBtn.classList.toggle("fa-pause");
       playBtn.classList.toggle("fa-play");
     }
@@ -68,7 +68,11 @@ window.addEventListener("load", function () {
     const remanTime = duration - currentTime;
     bar.max = duration;
     bar.value = currentTime;
-    durationAudio.textContent = CalTime(duration);
+    if (!duration) {
+      durationAudio.textContent = "0:00";
+    } else {
+      durationAudio.textContent = CalTime(duration);
+    }
     remaning.textContent = CalTime(remanTime);
   }
   function CalTime(time) {
